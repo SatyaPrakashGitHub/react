@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>React Basics</title>
+  </head>
+  <body>
+    <div id="root"></div>
+
+    <!-- React 18 UMD builds (latest stable for CDN) -->
+    <script
+      src="https://unpkg.com/react@18/umd/react.development.js"
+      crossorigin
+    ></script>
+    <script
+      src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+      crossorigin
+    ></script>
+
+    <!-- Babel for JSX -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    <script type="text/babel">
+      const root = ReactDOM.createRoot(document.getElementById("root"));
+
+      function Welcome() {
+        return (
+          <div>
+            <h1>Welcome to React! Let's build something amazing together</h1>
+            <button>Click Me</button>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam
+              qui optio quisquam doloribus harum. Voluptates voluptas reiciendis
+              deleniti magnam corporis ratione et quia earum, delectus molestiae
+              quaerat exercitationem commodi at.
+            </p>
+          </div>
+        );
+      }
+      root.render(<Welcome />);
+    </script>
+  </body>
+</html>
